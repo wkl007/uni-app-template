@@ -1,4 +1,5 @@
 # uni-app-template
+> uni-app项目初始化模板
 
 ## Project setup
 ```
