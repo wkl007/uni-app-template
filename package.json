@@ -1,0 +1,115 @@
+{
+  "name": "uni-app-template",
+  "version": "0.1.0",
+  "private": true,
+  "scripts": {
+    "serve": "npm run dev:h5",
+    "build": "npm run build:h5",
+    "build:app-plus": "cross-env NODE_ENV=production UNI_PLATFORM=app-plus vue-cli-service uni-build",
+    "build:custom": "cross-env NODE_ENV=production uniapp-cli custom",
+    "build:h5": "cross-env NODE_ENV=production UNI_PLATFORM=h5 vue-cli-service uni-build",
+    "build:mp-360": "cross-env NODE_ENV=production UNI_PLATFORM=mp-360 vue-cli-service uni-build",
+    "build:mp-alipay": "cross-env NODE_ENV=production UNI_PLATFORM=mp-alipay vue-cli-service uni-build",
+    "build:mp-baidu": "cross-env NODE_ENV=production UNI_PLATFORM=mp-baidu vue-cli-service uni-build",
+    "build:mp-qq": "cross-env NODE_ENV=production UNI_PLATFORM=mp-qq vue-cli-service uni-build",
+    "build:mp-toutiao": "cross-env NODE_ENV=production UNI_PLATFORM=mp-toutiao vue-cli-service uni-build",
+    "build:mp-weixin": "cross-env NODE_ENV=production UNI_PLATFORM=mp-weixin vue-cli-service uni-build",
+    "dev:app-plus": "cross-env NODE_ENV=development UNI_PLATFORM=app-plus vue-cli-service uni-build --watch",
+    "dev:custom": "cross-env NODE_ENV=development uniapp-cli custom",
+    "dev:h5": "cross-env NODE_ENV=development UNI_PLATFORM=h5 vue-cli-service uni-serve",
+    "dev:mp-360": "cross-env NODE_ENV=development UNI_PLATFORM=mp-360 vue-cli-service uni-build --watch",
+    "dev:mp-alipay": "cross-env NODE_ENV=development UNI_PLATFORM=mp-alipay vue-cli-service uni-build --watch",
+    "dev:mp-baidu": "cross-env NODE_ENV=development UNI_PLATFORM=mp-baidu vue-cli-service uni-build --watch",
+    "dev:mp-qq": "cross-env NODE_ENV=development UNI_PLATFORM=mp-qq vue-cli-service uni-build --watch",
+    "dev:mp-toutiao": "cross-env NODE_ENV=development UNI_PLATFORM=mp-toutiao vue-cli-service uni-build --watch",
+    "dev:mp-weixin": "cross-env NODE_ENV=development UNI_PLATFORM=mp-weixin vue-cli-service uni-build --watch",
+    "info": "node node_modules/@dcloudio/vue-cli-plugin-uni/commands/info.js",
+    "commit": "git-cz",
+    "lint": "npm run lint:code && npm run lint:style",
+    "lint:code": "eslint --fix src/**/*.{js,vue}",
+    "lint:style": "stylelint --fix src/**/*.{css,sss,less,scss}"
+  },
+  "dependencies": {
+    "@dcloudio/uni-app-plus": "^2.0.0-alpha-25720200116005",
+    "@dcloudio/uni-h5": "^2.0.0-alpha-25720200116005",
+    "@dcloudio/uni-helper-json": "*",
+    "@dcloudio/uni-mp-alipay": "^2.0.0-alpha-25720200116005",
+    "@dcloudio/uni-mp-baidu": "^2.0.0-alpha-25720200116005",
+    "@dcloudio/uni-mp-qq": "^2.0.0-alpha-25720200116005",
+    "@dcloudio/uni-mp-toutiao": "^2.0.0-alpha-25720200116005",
+    "@dcloudio/uni-mp-weixin": "^2.0.0-alpha-25720200116005",
+    "@dcloudio/uni-stat": "^2.0.0-alpha-25720200116005",
+    "flyio": "^0.6.2",
+    "regenerator-runtime": "^0.12.1",
+    "vue": "^2.6.11",
+    "vuex": "^3.0.1"
+  },
+  "devDependencies": {
+    "@commitlint/cli": "^8.3.5",
+    "@commitlint/config-conventional": "^8.3.4",
+    "@dcloudio/uni-cli-shared": "^2.0.0-alpha-25720200116005",
+    "@dcloudio/uni-migration": "^2.0.0-alpha-25720200116005",
+    "@dcloudio/uni-template-compiler": "^2.0.0-alpha-25720200116005",
+    "@dcloudio/vue-cli-plugin-hbuilderx": "^2.0.0-alpha-25720200116005",
+    "@dcloudio/vue-cli-plugin-uni": "^2.0.0-alpha-25720200116005",
+    "@dcloudio/vue-cli-plugin-uni-optimize": "^2.0.0-alpha-25720200116005",
+    "@dcloudio/webpack-uni-mp-loader": "^2.0.0-alpha-25720200116005",
+    "@dcloudio/webpack-uni-pages-loader": "^2.0.0-alpha-25720200116005",
+    "@types/html5plus": "*",
+    "@types/uni-app": "*",
+    "@vue/cli-plugin-babel": "3.5.1",
+    "@vue/cli-service": "~4.2.0",
+    "babel-eslint": "^10.0.3",
+    "babel-plugin-import": "^1.11.0",
+    "commitizen": "^4.0.3",
+    "compression-webpack-plugin": "^3.1.0",
+    "cz-conventional-changelog": "^3.1.0",
+    "eslint": "^6.8.0",
+    "eslint-config-standard": "^14.1.0",
+    "eslint-plugin-import": "^2.20.1",
+    "eslint-plugin-node": "^11.0.0",
+    "eslint-plugin-promise": "^4.2.1",
+    "eslint-plugin-standard": "^4.0.1",
+    "eslint-plugin-vue": "^6.2.1",
+    "husky": "^4.2.3",
+    "lint-staged": "^10.0.7",
+    "mini-types": "*",
+    "miniprogram-api-typings": "^2.8.0-2",
+    "node-sass": "^4.13.1",
+    "postcss-comment": "^2.0.0",
+    "sass-loader": "^8.0.2",
+    "scss": "^0.2.4",
+    "stylelint": "^13.2.0",
+    "stylelint-config-rational-order": "^0.1.2",
+    "stylelint-config-standard": "^20.0.0",
+    "stylelint-order": "^4.0.0",
+    "terser-webpack-plugin": "^2.3.5",
+    "vue-template-compiler": "^2.6.11"
+  },
+  "browserslist": [
+    "Android >= 4",
+    "ios >= 8"
+  ],
+  "uni-app": {
+    "scripts": {}
+  },
+  "husky": {
+    "hooks": {
+      "pre-commit": "lint-staged",
+      "commit-msg": "commitlint -E HUSKY_GIT_PARAMS"
+    }
+  },
+  "lint-staged": {
+    "src/**/*.{js,vue}": [
+      "eslint --fix"
+    ],
+    "src/**/*.{css,sss,less,scss}": [
+      "stylelint --fix"
+    ]
+  },
+  "config": {
+    "commitizen": {
+      "path": "./node_modules/cz-conventional-changelog"
+    }
+  }
+}
