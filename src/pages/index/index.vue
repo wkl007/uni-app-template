@@ -6,6 +6,7 @@
     </view>
     <u-icon icon="icon-ren" :size="60"/>
     <u-icon icon="icon-address" :size="60"/>
+    <no-data/>
     <html-parse
       url="https://shancai-1257275967.coscd.myqcloud.com/shancai/images/20190731/center2019073111173646.html"/>
     <empty/>
@@ -19,12 +20,14 @@ import IndexServer from '@/api'
 import HtmlParse from '@/components/html-parse/html-parse'
 import Empty from '@/components/empty/empty'
 import UIcon from '@/components/u-icon/u-icon'
+import NoData from '@/components/no-data/no-data'
 
 export default {
   components: {
     HtmlParse,
     Empty,
-    UIcon
+    UIcon,
+    NoData
   },
   data () {
     return {
