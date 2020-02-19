@@ -30,6 +30,7 @@
     "lint:style": "stylelint --fix src/**/*.{css,sss,less,scss}"
   },
   "dependencies": {
+    "@ascendancyy/vue-cli-plugin-stylelint": "^1.1.2",
     "@dcloudio/uni-app-plus": "^2.0.0-alpha-25720200116005",
     "@dcloudio/uni-h5": "^2.0.0-alpha-25720200116005",
     "@dcloudio/uni-helper-json": "*",
@@ -39,7 +40,10 @@
     "@dcloudio/uni-mp-toutiao": "^2.0.0-alpha-25720200116005",
     "@dcloudio/uni-mp-weixin": "^2.0.0-alpha-25720200116005",
     "@dcloudio/uni-stat": "^2.0.0-alpha-25720200116005",
+    "@dcloudio/uni-ui": "^1.1.8",
+    "dayjs": "^1.8.20",
     "flyio": "^0.6.2",
+    "numeral": "^2.0.6",
     "regenerator-runtime": "^0.12.1",
     "vue": "^2.6.11",
     "vuex": "^3.0.1"

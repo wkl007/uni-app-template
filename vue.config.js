@@ -63,4 +63,16 @@ module.exports = {
     proxy: null, // 设置代理
     before: app => {}
   },
+  // 第三方插件选项
+  pluginOptions: {
+    lintStyleOnBuild: true,
+    stylelint:
+      {
+        fix: true,
+        files:
+          'src/**/*.{vue,htm,html,css,sss,less,scss}',
+        formatter:
+          () => {}
+      }
+  }
 }
