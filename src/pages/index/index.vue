@@ -4,7 +4,11 @@
     <view>
       <text class="title">{{title}}</text>
     </view>
-    <html-parse html="123"/>
+    <u-icon icon="icon-ren" :size="60"/>
+    <u-icon icon="icon-address" :size="60"/>
+    <html-parse
+      url="https://shancai-1257275967.coscd.myqcloud.com/shancai/images/20190731/center2019073111173646.html"/>
+    <empty/>
   </view>
 </template>
 
@@ -13,14 +17,18 @@ import { mapGetters } from 'vuex'
 import CommonServer from '@/api/common'
 import IndexServer from '@/api'
 import HtmlParse from '@/components/html-parse/html-parse'
+import Empty from '@/components/empty/empty'
+import UIcon from '@/components/u-icon/u-icon'
 
 export default {
   components: {
-    HtmlParse
+    HtmlParse,
+    Empty,
+    UIcon
   },
   data () {
     return {
-      title: 'Hello'
+      title: 'Hello,123'
     }
   },
   computed: {

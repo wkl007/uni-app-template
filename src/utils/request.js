@@ -1,5 +1,6 @@
 import { isUrl } from '@/utils/index'
 import { API_URL } from '@/utils/constants'
+import store from '@/store'
 
 const baseUrl = API_URL
 const codeMessage = {
@@ -36,6 +37,8 @@ const checkStatus = response => {
 const request = options => {
   const { url, method, data } = options
   const header = {}
+  const { accessToken, loginStatus } = store.getters
+  if (loginStatus) header.Authorization = `JWT ${accessToken}`
   return uni.request({
     url: isUrl(url) ? url : `${baseUrl}${url}`,
     method: method.toUpperCase(),

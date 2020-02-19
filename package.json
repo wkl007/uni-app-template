@@ -30,7 +30,6 @@
     "lint:style": "stylelint --fix src/**/*.{css,sss,less,scss}"
   },
   "dependencies": {
-    "@ascendancyy/vue-cli-plugin-stylelint": "^1.1.2",
     "@dcloudio/uni-app-plus": "^2.0.0-alpha-25720200116005",
     "@dcloudio/uni-h5": "^2.0.0-alpha-25720200116005",
     "@dcloudio/uni-helper-json": "*",
@@ -49,6 +48,7 @@
     "vuex": "^3.0.1"
   },
   "devDependencies": {
+    "@ascendancyy/vue-cli-plugin-stylelint": "^1.1.2",
     "@commitlint/cli": "^8.3.5",
     "@commitlint/config-conventional": "^8.3.4",
     "@dcloudio/uni-cli-shared": "^2.0.0-alpha-25720200116005",

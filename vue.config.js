@@ -5,7 +5,6 @@ const TerserPlugin = require('terser-webpack-plugin')// 去console插件
 const CompressionWebpackPlugin = require('compression-webpack-plugin')// gzip压缩插件
 
 const resolve = dir => require('path').join(__dirname, dir)
-console.log(process.env.npm_lifecycle_event)
 
 module.exports = {
   // 生产环境sourceMap
@@ -28,7 +27,7 @@ module.exports = {
       }),
     ]
     // h5打包gzip压缩处理
-    if (process.env.npm_lifecycle_event.includes('h5')) {
+    if (process.env.npm_lifecycle_event && process.env.npm_lifecycle_event.includes('h5')) {
       plugins.push(new CompressionWebpackPlugin({
         filename: '[path].gz[query]',
         algorithm: 'gzip',
@@ -64,7 +63,7 @@ module.exports = {
     before: app => {}
   },
   // 第三方插件选项
-  pluginOptions: {
+  pluginOptions: process.env.npm_lifecycle_event ? {
     lintStyleOnBuild: true,
     stylelint:
       {
@@ -74,5 +73,5 @@ module.exports = {
         formatter:
           () => {}
       }
-  }
+  } : {}
 }
