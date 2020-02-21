@@ -42,6 +42,7 @@
     "@dcloudio/uni-ui": "^1.1.8",
     "dayjs": "^1.8.20",
     "flyio": "^0.6.2",
+    "jweixin-module": "^1.6.0",
     "numeral": "^2.0.6",
     "regenerator-runtime": "^0.12.1",
     "vue": "^2.6.11",

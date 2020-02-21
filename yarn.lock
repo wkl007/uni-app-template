@@ -6160,6 +6160,11 @@ jsprim@^1.2.2:
     json-schema "0.2.3"
     verror "1.10.0"
 
+jweixin-module@^1.6.0:
+  version "1.6.0"
+  resolved "https://registry.npm.taobao.org/jweixin-module/download/jweixin-module-1.6.0.tgz#4a7ea614083e3c9c3f49e2fdc2bb882cfa58dfcd"
+  integrity sha1-Sn6mFAg+PJw/SeL9wruILPpY380=
+
 killable@^1.0.1:
   version "1.0.1"
   resolved "https://registry.npm.taobao.org/killable/download/killable-1.0.1.tgz#4c8ce441187a061c7474fb87ca08e2a638194892"
