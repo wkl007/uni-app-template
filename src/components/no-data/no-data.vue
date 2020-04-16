@@ -1,12 +1,12 @@
 <template>
-  <div
+  <view
     class="no-data"
     :class="fixed?'fixed':''"
     :style="style"
   >
     <image :src="emptyImg" class="empty-img" mode="widthFix"/>
     <text class="text">{{text}}</text>
-  </div>
+  </view>
 </template>
 
 <script>

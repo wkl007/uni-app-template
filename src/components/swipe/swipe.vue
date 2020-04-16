@@ -1,5 +1,5 @@
 <template>
-  <div class="swipe">
+  <view class="swipe">
     <swiper
       :interval=5000
       :duration=500
@@ -14,13 +14,13 @@
         :key="index"
         @click="handleClick(item)"
       >
-        <img
+        <image
           :src="item.url||item"
           class="swipe-img"
         />
       </swiper-item>
     </swiper>
-  </div>
+  </view>
 </template>
 
 <script>
