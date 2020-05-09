@@ -5,7 +5,8 @@ export default class CommonServer {
   static getHtml (url) {
     return uni.request({
       url,
-      method: 'GET'
+      method: 'GET',
+      dataType: 'text'
     })
   }
 }

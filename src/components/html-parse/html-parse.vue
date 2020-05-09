@@ -49,11 +49,15 @@ export default {
   methods: {
     // 获取html代码片段
     async getHtmlContent () {
-      let html = this.url
-      if (isUrl(this.url)) {
-        html = (await CommonServer.getHtml(this.url))[1].data
+      try {
+        let html = this.url
+        if (isUrl(this.url)) {
+          html = (await CommonServer.getHtml(this.url))[1].data
+        }
+        this.html = processHtml(html) || '暂无数据'
+      } catch (e) {
+        console.log(e)
       }
-      this.html = processHtml(html) || '暂无数据'
     }
   }
 }
