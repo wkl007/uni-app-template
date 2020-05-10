@@ -1,33 +1,20 @@
+var inlineTags = {
+	abbr: 1,
+	b: 1,
+	big: 1,
+	code: 1,
+	del: 1,
+	em: 1,
+	i: 1,
+	ins: 1,
+	label: 1,
+	q: 1,
+	small: 1,
+	span: 1,
+	strong: 1
+}
 export default {
-	getStyle: function(style, display) {
-		var tmp, res = "";
-		if (style) {
-			style = style.toLowerCase();
-			if (style.indexOf("float") != -1) res += style.match(getRegExp("float[^;]+", "g")).pop();
-			if (style.indexOf("margin") != -1) res += (';' + style.match(getRegExp("margin[^;]+", "g")).join(';'));
-			if (style.indexOf("display") != -1 && (tmp = style.match(getRegExp("display[^;]+", "g")).pop(), tmp.indexOf("flex") ==
-					-1)) res += (';' + tmp);
-			else res += (';display:' + display);
-			tmp = style.match(getRegExp("flex[^;]*:[^;]+", "g"));
-			if (tmp) res += (';' + tmp.join(';'));
-			if (style.indexOf("width") != -1) res += (';' + style.match(getRegExp("[^;\s]*width[^;]+", "g")).join(';'));
-		} else res = ("display:" + display);
-		return res;
-	},
-	setImgStyle: function(item, imgMode) {
-		if (item.attrs.style)
-			item.attrs.style = item.attrs.style.toLowerCase().replace(getRegExp("width[^;]*?%", "g"), "width:100%").replace(
-				getRegExp('margin[^;]+', "g"), "");
-		if (imgMode == "widthFix") item.attrs.style = (item.attrs.style || '') + ";height:auto !important";
-		return [item];
-	},
-	setStyle: function(item) {
-		if (item.attrs.style)
-			item.attrs.style = item.attrs.style.toLowerCase().replace(getRegExp("width[^;]*?%", "g"), "width:100%").replace(
-				getRegExp('margin[^;]+', "g"), "");
-		return [item];
-	},
-	isInlineTag: function(name) {
-		return !!inlineTags[name];
+	useRichText: function(item) {
+		return !item.c && !inlineTags[item.name] && (item.attrs.style || '').indexOf('display:inline') == -1;
 	}
 }

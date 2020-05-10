@@ -1,6 +1,13 @@
 <template>
   <view>
-    <parser :html="html"/>
+    <parser
+      :html="html"
+      lazy-load
+      selectable
+      show-with-animation
+      use-cache
+      @ready="$emit('ready')"
+    />
   </view>
 </template>
 
