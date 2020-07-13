@@ -110,13 +110,6 @@
     "terser-webpack-plugin": "^3.0.6",
     "vue-template-compiler": "^2.6.11"
   },
-  "browserslist": [
-    "Android >= 4",
-    "ios >= 8"
-  ],
-  "uni-app": {
-    "scripts": {}
-  },
   "husky": {
     "hooks": {
       "pre-commit": "lint-staged",
