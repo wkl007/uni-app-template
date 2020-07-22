@@ -1,6 +1,6 @@
 <template>
   <view>
-    <parser
+    <u-parse
       :html="html"
       lazy-load
       selectable
@@ -12,7 +12,6 @@
 </template>
 
 <script>
-import Parser from '@/components/html-parse/jyf-parser/jyf-parser'
 import { isUrl } from '@/utils'
 import CommonServer from '@/api/common'
 
@@ -30,7 +29,6 @@ const processHtml = html => {
 export default {
   name: 'HtmlParse',
   components: {
-    Parser
   },
   props: {
     url: {

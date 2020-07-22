@@ -21,7 +21,6 @@ module.exports = {
   ],
   rules: {
     'camelcase': 0,// 强制驼峰法命名
-    'comma-dangle': [0, 'never'],// 对象字面量项尾不能有逗号
     'handle-callback-err': 0,// nodejs 处理错误
     'no-console': 0,// 禁止使用console
     'no-debugger': process.env.NODE_ENV === 'production' ? 'error' : 'off',

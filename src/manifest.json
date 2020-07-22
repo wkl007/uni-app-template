@@ -80,7 +80,7 @@
       "enhance": true
     },
     "usingComponents": true,
-    "libVersion": "2.11.0"
+    "libVersion": "2.12.0"
   },
   "mp-alipay": {
     "usingComponents": true
