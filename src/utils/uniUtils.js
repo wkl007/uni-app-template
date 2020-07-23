@@ -81,7 +81,7 @@ export const uniUploadFile = () => {
       filePath,
       name: fileName,
       header: {
-        'Content-Type': 'multipart/form-data',
+        'Content-Type': 'multipart/form-data'
       },
       success: res => resolve(res),
       fail: err => reject(err)
@@ -125,7 +125,7 @@ export const uniUpdate = () => {
       // 新的版本下载失败
       uni.showModal({
         title: '已经有新版本了哟~',
-        content: '新版本已经上线啦~，请您删除当前小程序，重新搜索打开哟~',
+        content: '新版本已经上线啦~，请您删除当前小程序，重新搜索打开哟~'
       })
     })
   })

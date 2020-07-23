@@ -1,4 +1,4 @@
-//单行文本溢出显示省略号...
+// 单行文本溢出显示省略号...
 @mixin text-overflow-hidden {
   overflow: hidden;
   white-space: nowrap;
@@ -6,7 +6,7 @@
   vertical-align: -webkit-baseline-middle;
 }
 
-//多行换行
+// 多行换行
 @mixin more-line-nowrap($num) {
   display: -webkit-box;
   overflow: hidden;
@@ -14,4 +14,10 @@
   word-break: break-all;
   -webkit-box-orient: vertical;
   -webkit-line-clamp: $num;
+}
+
+// 容器iphoneX适配
+@mixin safe-area-inset-bottom($num) {
+  padding-bottom: calc(#{$num} + constant(safe-area-inset-bottom));
+  padding-bottom: calc(#{$num} + env(safe-area-inset-bottom));
 }

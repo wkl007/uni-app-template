@@ -1877,9 +1877,9 @@
   resolved "https://registry.npm.taobao.org/@vue/cli-overlay/download/@vue/cli-overlay-4.4.6.tgz?cache=0&sync_timestamp=1592976467643&other_urls=https%3A%2F%2Fregistry.npm.taobao.org%2F%40vue%2Fcli-overlay%2Fdownload%2F%40vue%2Fcli-overlay-4.4.6.tgz#58f996066d8c0a0a45ad4b5c6f3f213f9945a9ba"
   integrity sha1-WPmWBm2MCgpFrUtcbz8hP5lFqbo=
 
-"@vue/cli-plugin-babel@~4.4.0":
+"@vue/cli-plugin-babel@~4.4.6":
   version "4.4.6"
-  resolved "https://registry.npm.taobao.org/@vue/cli-plugin-babel/download/@vue/cli-plugin-babel-4.4.6.tgz?cache=0&sync_timestamp=1592976473876&other_urls=https%3A%2F%2Fregistry.npm.taobao.org%2F%40vue%2Fcli-plugin-babel%2Fdownload%2F%40vue%2Fcli-plugin-babel-4.4.6.tgz#d5d750d4f74900c00836e19c164193650df26f3b"
+  resolved "http://192.168.4.114:8081/repository/npm-group/@vue/cli-plugin-babel/-/cli-plugin-babel-4.4.6.tgz#d5d750d4f74900c00836e19c164193650df26f3b"
   integrity sha1-1ddQ1PdJAMAINuGcFkGTZQ3ybzs=
   dependencies:
     "@babel/core" "^7.9.6"
@@ -1902,9 +1902,9 @@
   resolved "https://registry.npm.taobao.org/@vue/cli-plugin-vuex/download/@vue/cli-plugin-vuex-4.4.6.tgz?cache=0&other_urls=https%3A%2F%2Fregistry.npm.taobao.org%2F%40vue%2Fcli-plugin-vuex%2Fdownload%2F%40vue%2Fcli-plugin-vuex-4.4.6.tgz#44b596f0d5236e0a2ce1aa4757bda5207c230be0"
   integrity sha1-RLWW8NUjbgos4apHV72lIHwjC+A=
 
-"@vue/cli-service@~4.4.0":
+"@vue/cli-service@~4.4.6":
   version "4.4.6"
-  resolved "https://registry.npm.taobao.org/@vue/cli-service/download/@vue/cli-service-4.4.6.tgz?cache=0&sync_timestamp=1592976472856&other_urls=https%3A%2F%2Fregistry.npm.taobao.org%2F%40vue%2Fcli-service%2Fdownload%2F%40vue%2Fcli-service-4.4.6.tgz#83ca058d081eb145bbc1ae2fe8069d2d9ddf7e18"
+  resolved "http://192.168.4.114:8081/repository/npm-group/@vue/cli-service/-/cli-service-4.4.6.tgz#83ca058d081eb145bbc1ae2fe8069d2d9ddf7e18"
   integrity sha1-g8oFjQgesUW7wa4v6AadLZ3ffhg=
   dependencies:
     "@intervolga/optimize-cssnano-plugin" "^1.0.5"
@@ -5595,9 +5595,9 @@ flush-write-stream@^1.0.0:
     inherits "^2.0.3"
     readable-stream "^2.3.6"
 
-flyio@^0.6.2:
+flyio@^0.6.14:
   version "0.6.14"
-  resolved "https://registry.npm.taobao.org/flyio/download/flyio-0.6.14.tgz#c5d83eb7a9b4fc1c915a463d2ea6dfce755c2d6f"
+  resolved "http://192.168.4.114:8081/repository/npm-group/flyio/-/flyio-0.6.14.tgz#c5d83eb7a9b4fc1c915a463d2ea6dfce755c2d6f"
   integrity sha1-xdg+t6m0/ByRWkY9LqbfznVcLW8=
   dependencies:
     request "^2.85.0"
@@ -13031,9 +13031,9 @@ vue@^2.6.11:
   resolved "https://registry.npm.taobao.org/vue/download/vue-2.6.11.tgz#76594d877d4b12234406e84e35275c6d514125c5"
   integrity sha1-dllNh31LEiNEBuhONSdcbVFBJcU=
 
-vuex@^3.2.0:
+vuex@^3.5.1:
   version "3.5.1"
-  resolved "https://registry.npm.taobao.org/vuex/download/vuex-3.5.1.tgz#f1b8dcea649bc25254cf4f4358081dbf5da18b3d"
+  resolved "http://192.168.4.114:8081/repository/npm-group/vuex/-/vuex-3.5.1.tgz#f1b8dcea649bc25254cf4f4358081dbf5da18b3d"
   integrity sha1-8bjc6mSbwlJUz09DWAgdv12hiz0=
 
 w3c-hr-time@^1.0.1:
