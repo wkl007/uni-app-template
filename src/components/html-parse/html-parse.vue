@@ -28,8 +28,6 @@ const processHtml = html => {
 
 export default {
   name: 'HtmlParse',
-  components: {
-  },
   props: {
     url: {
       type: String,
