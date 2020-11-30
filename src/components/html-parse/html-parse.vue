@@ -58,9 +58,7 @@ export default {
           html = (await CommonServer.getHtml(this.url))[1].data
         }
         this.html = processHtml(html) || '暂无数据'
-      } catch (e) {
-        console.log(e)
-      }
+      } catch (e) {}
     }
   }
 }

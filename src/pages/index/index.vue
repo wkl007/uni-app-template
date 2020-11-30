@@ -274,7 +274,7 @@ export default {
   methods: {
     handleReady () {
       this.$nextTick(() => {
-        // this.$refs.uReadMore.init()
+        this.$refs.uReadMore.init()
       })
     },
     getData () {
