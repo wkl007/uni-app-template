@@ -19,12 +19,12 @@ module.exports = {
           warnings: false,
           compress: {
             drop_debugger: true,
-            drop_console: true,
-          },
+            drop_console: true
+          }
         },
         sourceMap: false,
-        parallel: true,
-      }),
+        parallel: true
+      })
     ]
     // h5打包gzip压缩处理
     if (process.env.npm_lifecycle_event && process.env.npm_lifecycle_event.includes('h5')) {
@@ -34,10 +34,10 @@ module.exports = {
         test: new RegExp(
           '\\.(' +
           ['js', 'css'].join('|') +
-          ')$',
+          ')$'
         ),
         threshold: 10240,
-        minRatio: 0.8,
+        minRatio: 0.8
       }))
     }
     if (process.env.NODE_ENV === 'production') {
@@ -63,15 +63,7 @@ module.exports = {
     before: app => {}
   },
   // 第三方插件选项
-  pluginOptions: process.env.npm_lifecycle_event ? {
-    lintStyleOnBuild: true,
-    stylelint:
-      {
-        fix: true,
-        files:
-          'src/**/*.{vue,htm,html,css,sss,less,scss}',
-        formatter:
-          () => {}
-      }
-  } : {}
+  pluginOptions: process.env.npm_lifecycle_event
+    ? { lintStyleOnBuild: true, stylelint: { fix: true, files: 'src/**/*.{vue,htm,html,css,sss,less,scss}', formatter: () => {} } }
+    : {}
 }

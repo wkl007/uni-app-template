@@ -1,3 +1,5 @@
+import dayjs from 'dayjs'
+
 /**
  * 判断url
  * @param path
@@ -52,7 +54,7 @@ export const throttle = (func, gapTime) => {
  * @param fn 升序(a, b) => a - b) 降序 (a, b) => b - a)
  * @returns {*}
  */
-export const bubble_sort = (arr, fn) => {
+export const bubbleSort = (arr, fn) => {
   let len = arr.length
   while (len--) {
     for (let i = 0;
@@ -110,15 +112,12 @@ export const trimObjValue = (obj = {}) => {
  * 检查timestamp是否在有效期内
  * @param timestamp 项目更新时间
  * @param validityPeriod 项目有效期
- * @returns {boolean}  true 不需要更新,false需要更新
+ * @param measure 度量 years、months、weeks、days、hours、minutes、seconds
+ * @returns {boolean} true 不需要更新,false需要更新
  */
-export const checkTimestampValid = (timestamp, validityPeriod = 24) => {
-  const currentDate = new Date()
-  const targetDate = new Date()
+export const checkTimestampValid = (timestamp, validityPeriod = 60, measure = 'seconds') => {
+  const currentDate = new Date() // 当前时间 新
+  const targetDate = new Date() // 目标时间 旧
   targetDate.setTime(timestamp)
-  if (currentDate.getMonth() !== targetDate.getMonth()) return false
-  if (currentDate.getDate() !== targetDate.getDate()) return false
-  if (currentDate.getHours() - targetDate.getHours() > validityPeriod) return false
-  // if (currentDate.getMinutes() - targetDate.getMinutes() > 1)return false;
-  return true
+  return dayjs(currentDate).diff(dayjs(targetDate), measure) <= validityPeriod
 }
