@@ -108,7 +108,7 @@
     "lint-staged": "^11.0.0",
     "mini-types": "0.1.7",
     "miniprogram-api-typings": "3.3.2",
-    "node-sass": "^6.0.0",
+    "node-sass": "^7.0.0",
     "postcss-comment": "^2.0.0",
     "sass-loader": "10.2.0",
     "stylelint": "^13.13.1",
